@@ -68,10 +68,10 @@ html, body {
 .cover > img {
   image-rendering: -webkit-optimize-contrast;
   image-rendering: crisp-edges;
-  object-fit: contain;
+  object-fit: cover;
   width: 100%;
   height: 100%;
-  object-position: center top; }
+  object-position: center; }
 
 .progress-bar {
   text-transform: uppercase;
