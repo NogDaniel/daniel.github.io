@@ -2,8 +2,10 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact - Daniel Noguera</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap">
     <link href="css/font-awesome/css/all.min.css" rel="stylesheet">
     <link href="css/mdb.min.css" rel="stylesheet">
@@ -12,11 +14,12 @@
   </head>
   <body class="bg-light">
 
-    <!-- Barra de navegación fija -->
+    <!-- Barra de navegación fija (igual que en las otras páginas) -->
     <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top" style="z-index: 1030;">
       <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Daniel Noguera</a>
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -31,50 +34,63 @@
       </div>
     </nav>
 
-    <!-- Contenido principal -->
+    <!-- Contenido principal: distribución idéntica a la plantilla original -->
     <div class="container my-5">
-      <div class="shadow-1-strong bg-white p-5 rounded">
-        <h2 class="h2 fw-light mb-4 text-center">Contact</h2>
-        <p class="lead text-muted text-center mb-5">You’re welcome to contact me for any questions or projects.</p>
+      <div class="shadow-1-strong bg-white p-5 rounded" id="contact">
+        <div class="contant-section">
+          <h2 class="h2 fw-light text mb-4 text-center">Contact</h2>
+          <p class="lead text-muted text-center mb-5">You’re welcome to contact me for any questions or projects.</p>
 
-        <div class="row">
-          <div class="col-md-6">
-            <div class="mb-5">
-              <div class="h6"><i class="fas fa-phone pe-2 text-muted"></i> (LUX) +352 839 456</div>
-              <div class="h6"><i class="far fa-envelope pe-2 text-muted"></i> noguera.upc@gmail.com</div>
+          <div class="row mb-4">
+            <!-- Columna izquierda: teléfono, email y formulario -->
+            <div class="col-md-5" data-aos="fade-left" data-aos-delay="200">
+              <div class="mt-1">
+                <div class="h6"><i class="fas fa-phone pe-2 text-muted" style="width:24px;opacity:0.85;"></i> (LUX) +352 839 456</div>
+                <div class="h6"><i class="far fa-envelope pe-2 text-muted" style="width:24px;opacity:0.85;"></i> noguera.upc@gmail.com</div>
+              </div>
+
+              <div class="mt-5 d-print-none">
+                <form action="https://api.web3forms.com/submit" method="POST">
+                  <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
+
+                  <div class="form-outline mb-4">
+                    <input type="text" name="name" id="name" class="form-control" required/>
+                    <label class="form-label" for="name">Name</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="email" name="email" id="email" class="form-control" required/>
+                    <label class="form-label" for="email">Email address</label>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <textarea name="message" id="message" class="form-control" style="resize: none;" rows="4" required></textarea>
+                    <label class="form-label" for="message">Message</label>
+                  </div>
+                  <button class="btn btn-info btn-block mb-4" type="submit">Send Message</button>
+                </form>
+              </div>
             </div>
 
-            <form action="https://api.web3forms.com/submit" method="POST">
-              <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
-
-              <div class="form-outline mb-4">
-                <input type="text" name="name" class="form-control" required>
-                <label class="form-label">Name</label>
-              </div>
-              <div class="form-outline mb-4">
-                <input type="email" name="email" class="form-control" required>
-                <label class="form-label">Email address</label>
-              </div>
-              <div class="form-outline mb-4">
-                <textarea name="message" class="form-control" rows="4" required></textarea>
-                <label class="form-label">Message</label>
-              </div>
-              <button type="submit" class="btn btn-info">Send Message</button>
-            </form>
-          </div>
-          <div class="col-md-6 text-center mt-4 mt-md-0">
-            <p class="text-muted">Luxembourg</p>
-            <!-- Si quieres volver a poner el mapa, descomenta esto -->
-            <!-- <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+            <!-- Columna derecha: mapa -->
+            <div class="col-md-7 d-print-none" data-aos="zoom-in" data-aos-delay="100">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41632.45678901234!2d6.119999999999999!3d49.61500000000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479545e7f0d11b15%3A0x3f3b4e0f8f8b4e0f!2sLuxembourg!5e0!3m2!1sen!2slu!4v1704370000000!5m2!1sen!2slu"
+                      width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Footer -->
     <footer class="py-4 text-center text-muted small bg-white border-top">
       <div class="container">
-        © 2026 Daniel Noguera — All rights reserved
+        © 2026 Daniel Noguera — All rights reserved<br>
+        Last updated: January 2026
       </div>
     </footer>
+
+    <script src="scripts/mdb.min.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>AOS.init({duration: 800});</script>
   </body>
 </html>
