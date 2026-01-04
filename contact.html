@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <title>Contact - Daniel Noguera</title>
+    <!-- Mismos links -->
+  </head>
+  <body class="bg-light">
+    <header class="d-print-none shadow-sm bg-white sticky-top">
+      <!-- Active en Contact -->
+      <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+    </header>
+
+    <div class="container my-5">
+      <div class="shadow-1-strong bg-white p-5 rounded">
+        <h2 class="h2 fw-light mb-4">Contact</h2>
+        <p class="lead text-muted mb-5">You’re welcome to contact me for any questions or projects.</p>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="mb-4">
+              <div class="h6"><i class="fas fa-phone pe-2 text-muted"></i> (LUX) +352 839 456</div>
+              <div class="h6"><i class="far fa-envelope pe-2 text-muted"></i> noguera.upc@gmail.com</div>
+            </div>
+
+            <div class="mt-5">
+              <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="TU_ACCESS_KEY_AQUI">
+
+                <div class="form-outline mb-4">
+                  <input type="text" name="name" class="form-control" required>
+                  <label class="form-label">Name</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <input type="email" name="email" class="form-control" required>
+                  <label class="form-label">Email address</label>
+                </div>
+                <div class="form-outline mb-4">
+                  <textarea name="message" class="form-control" rows="4" required></textarea>
+                  <label class="form-label">Message</label>
+                </div>
+                <button type="submit" class="btn btn-info">Send Message</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 mt-4 mt-md-0">
+            <!-- Mapa o texto de ubicación -->
+            <p class="text-center text-muted">Luxembourg</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="py-4 text-center text-muted small bg-white border-top">
+      <div class="container">
+        © 2026 Daniel Noguera — All rights reserved
+      </div>
+    </footer>
+  </body>
+</html>
