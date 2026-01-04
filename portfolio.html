@@ -2,8 +2,10 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio - Daniel Noguera</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@300;400;500;700&display=swap">
     <link href="css/font-awesome/css/all.min.css" rel="stylesheet">
     <link href="css/mdb.min.css" rel="stylesheet">
@@ -35,25 +37,69 @@
     <div class="container my-5">
       <div class="shadow-1-strong bg-white p-5 rounded">
         <h2 class="h2 fw-light mb-5 text-center">Portfolio</h2>
-        <!-- Copia aquí tu sección de portfolio del código original -->
+
+        <!-- Proyecto 1: Imagen izquierda, texto derecha -->
         <div class="row g-0">
-          <div class="col-md-6"><a href="https://dribbble.com/" target="_blank"><img class="img-fluid" src="images/project-1.jpg" alt="Project 1"/></a></div>
-          <div class="col-md-6 d-flex align-items-center" data-aos="fade-left">
-            <div class="m-4">
+          <div class="col-md-6">
+            <a href="https://dribbble.com/" target="_blank">
+              <img class="img-fluid" src="images/project-1.jpg" width="800" height="500" alt="Photo Agency Website"/>
+            </a>
+          </div>
+          <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
+            <div class="m-4 mt-md-2">
               <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
               <h3>Photo Agency Website</h3>
-              <p class="text-muted">Built highly performant website front end for a Photography agency...</p>
+              <p class="text-muted">Built highly performant website front end for a Photography agency. Delivered codebase in HTML, CSS and modern JavaScript.</p>
             </div>
           </div>
         </div>
-        <!-- Repite los otros proyectos -->
+
+        <!-- Proyecto 2: Texto izquierda, imagen derecha (inverso) -->
+        <div class="row g-0 portfolio-reverse">
+          <div class="col-md-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
+            <div class="m-4 mt-md-2 text-end">
+              <p class="text-teal text-small">Graphic Design / Photoshop / Sketch</p>
+              <h3>Restaurant Website Design</h3>
+              <p class="text-muted">Web design for popular restaurant chain involving complex layouts done in both Photoshop and Sketch. Collaborated with back-end and front-end team for finished product.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <a href="https://www.behance.net/" target="_blank">
+              <img class="img-fluid" src="images/project-2.jpg" width="800" height="500" alt="Restaurant Website Design"/>
+            </a>
+          </div>
+        </div>
+
+        <!-- Proyecto 3: Imagen izquierda, texto derecha -->
+        <div class="row g-0">
+          <div class="col-md-6">
+            <a href="https://dribbble.com/" target="_blank">
+              <img class="img-fluid" src="images/project-3.jpg" width="800" height="500" alt="E-Commerce Website"/>
+            </a>
+          </div>
+          <div class="col-md-6 d-flex align-items-center" data-aos="fade-left" data-aos-delay="100">
+            <div class="m-4 mt-md-2">
+              <p class="text-teal text-small">Frontend / HTML / CSS / JavaScript</p>
+              <h3>E-Commerce Website</h3>
+              <p class="text-muted">Built highly performant website for an E-commerce Portal. Worked with back-end team to timely deliver codebase in HTML, CSS and modern JavaScript.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
+    <!-- Footer simple -->
     <footer class="py-4 text-center text-muted small bg-white border-top">
       <div class="container">
-        © 2026 Daniel Noguera — All rights reserved
+        © 2026 Daniel Noguera — All rights reserved<br>
+        Last updated: January 2026
       </div>
     </footer>
+
+    <script src="scripts/mdb.min.js"></script>
+    <script src="scripts/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>AOS.init({duration: 800});</script>
   </body>
 </html>
