@@ -66,6 +66,8 @@ html, body {
   height: 500px; }
 
 .cover > img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
   -o-object-fit: cover;
      object-fit: cover;
   width: auto; }
