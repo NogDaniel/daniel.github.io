@@ -42,7 +42,11 @@ html, body {
 
 .site-title {
   font-size: 1.25rem;
-  line-height: 2.5rem; }
+  line-height: 2.5rem;
+  font-weight: 700;                
+  font-size: 1.8rem;                   
+  letter-spacing: 1px;                  
+  color: #2c3e50; }
 
 .nav-link {
   padding: 0;
